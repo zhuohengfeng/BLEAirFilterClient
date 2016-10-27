@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+	<android.support.v4.view.ViewPager
+        android:persistentDrawingCache="animation"
+        android:id="@+id/main_viewpager"
+        android:layout_gravity="center"
+        android:layout_above="@+id/bottomLayout"
+		android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+    
+	
+	<LinearLayout
+		android:id="@+id/bottomLayout"
+		android:orientation="horizontal"
+      	android:layout_width="match_parent"
+      	android:layout_height="wrap_content"
+      	android:layout_alignParentBottom="true">
+      	
+        <ImageView
+			android:layout_width="0dp"
+			android:layout_weight="1"
+      		android:layout_height="wrap_content"
+            android:id="@+id/btnControl"
+            android:contentDescription="@string/app_name"
+            android:background="@drawable/btn_control" />
+
+        <ImageView
+			android:layout_width="0dp"
+			android:layout_weight="1"
+      		android:layout_height="wrap_content"
+            android:id="@+id/btnSettings"
+            android:contentDescription="@string/app_name"
+            android:background="@drawable/btn_settings" />
+
+        <ImageView
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+            android:id="@+id/btnDevicesList"
+            android:contentDescription="@string/app_name"
+            android:background="@drawable/btn_devicelist" />
+        
+      </LinearLayout>
+	
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BleAirFilter</string>
+    <string name="hello_world">Hello world!</string>
+
+	<string name="action_refresh">Refresh</string>
+	<string name="scanning">Looking for devices. Please wait…</string>
+	<string name="no_devices">No devices found.</string>
+	<string name="temp_label">Temperature:</string>
+	<string name="temp_format">%1$.1f°</string>
+	<string name="humidity_label">Humidity:</string>
+	<string name="humidity_format">%1$.1f%%</string>
+	
+	<string name="control_text">Control</string>
+	<string name="setting_text">Settings</string>
+	<string name="devicelist_text">Devices</string>
+	
+</resources>

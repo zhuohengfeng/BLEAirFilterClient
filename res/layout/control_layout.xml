@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:id="@+id/control_head_layout"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+		<TextView
+		    android:gravity="center"
+		    android:id="@+id/tv_power"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="实时能耗：35W"
+            android:textColor="#FF000000"
+            android:textSize="16dp" />
+        	   
+		<TextView
+		    android:gravity="center"
+		    android:id="@+id/tv_weather"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="厦门：23~30度"
+            android:textColor="#FF000000"
+            android:textSize="16dp" />
+	</LinearLayout> 
+
+    <LinearLayout
+        android:layout_toLeftOf="@+id/img_air_stats"
+        android:layout_alignTop="@+id/img_air_stats"
+        android:layout_alignBottom="@+id/img_air_stats"
+        android:orientation="vertical"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+   		<TextView
+   		    android:id="@+id/text_lvwang_1"
+		    android:gravity="left|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="滤网一:10%"
+            android:textColor="#FF000000"
+            android:textSize="12dp" />
+   		<TextView
+   		    android:id="@+id/text_lvwang_2"
+		    android:gravity="left|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="滤网二:20%"
+            android:textColor="#FF000000"
+            android:textSize="12dp" />
+    </LinearLayout>
+    
+    
+	<LinearLayout
+        android:layout_toRightOf="@+id/img_air_stats"
+        android:layout_alignTop="@+id/img_air_stats"
+        android:layout_alignBottom="@+id/img_air_stats"
+        android:orientation="vertical"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+   		
+		<TextView
+		    android:id="@+id/text_lvwang_3"
+		    android:gravity="right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:text="滤网三:10%"
+            android:textColor="#FF000000"
+            android:textSize="12dp" />
+   		<TextView
+   		    android:id="@+id/text_lvwang_4"
+		    android:gravity="right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:text="滤网四:20%"
+            android:textColor="#FF000000"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+    
+    
+    
+	<ImageView 
+        android:id="@+id/img_air_stats"
+        android:layout_margin="8dp"
+        android:src="@drawable/zhiling_you"
+        android:layout_below="@+id/control_head_layout"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+		android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"/>
+    
+    
+    
+	<LinearLayout
+        android:id="@+id/control_btn_layout_1"
+        android:gravity="center"
+        android:baselineAligned="false"
+        android:layout_below="@+id/img_air_stats"
+        android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+		
+		<LinearLayout
+	        android:layout_weight="1"
+			android:layout_width="0dp"
+			android:gravity="center"
+	    	android:layout_height="wrap_content">	
+		    <ImageView 
+		        android:background="@drawable/btn_zhineng_off"
+		        android:contentDescription="@string/app_name"
+		        android:id="@+id/img_btn_zhineng"
+				android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"/>
+		</LinearLayout> 
+		
+		<LinearLayout
+	        android:layout_weight="1"
+			android:layout_width="0dp"
+			android:gravity="center"
+	    	android:layout_height="wrap_content">		   
+		    <ImageView 
+		        android:background="@drawable/btn_lizi_off"
+		        android:contentDescription="@string/app_name"
+		        android:id="@+id/img_btn_lizi"
+				android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"/>
+		</LinearLayout> 
+		
+   	    <LinearLayout
+	        android:layout_weight="1"
+			android:layout_width="0dp"
+			android:gravity="center"
+	    	android:layout_height="wrap_content">	
+		    <ImageView 
+		        android:background="@drawable/btn_huanjing_off"
+		        android:contentDescription="@string/app_name"
+		        android:id="@+id/img_btn_huangjing"
+				android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"/>
+	    </LinearLayout> 
+	</LinearLayout> 
+    
+	
+	<LinearLayout
+        android:id="@+id/control_btn_layout_2"
+        android:gravity="center"
+        android:baselineAligned="false"
+        android:layout_below="@+id/control_btn_layout_1"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	    
+   	    <LinearLayout
+	        android:layout_weight="1"
+			android:layout_width="0dp"
+			android:gravity="center"
+	    	android:layout_height="wrap_content">	
+		    <ImageView 
+		        android:background="@drawable/btn_shuimian_off"
+		        android:contentDescription="@string/app_name"
+		        android:id="@+id/img_btn_shuimian"
+				android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_weight="1"
+			android:layout_width="0dp"
+			android:gravity="center"
+	    	android:layout_height="wrap_content">	        	   
+		    <ImageView 
+		        android:background="@drawable/btn_kaiguan_off"
+		        android:contentDescription="@string/app_name"
+		        android:id="@+id/img_btn_kaiguan"
+				android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_weight="1"
+			android:layout_width="0dp"
+			android:gravity="center"
+	    	android:layout_height="wrap_content">	    
+		    <ToggleButton 
+		        android:background="@drawable/btn_lvwang"
+		        android:textOn="@null"
+		        android:textOff="@null"
+		        android:id="@+id/img_btn_lvwang"
+				android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"/>
+	    </LinearLayout> 
+	</LinearLayout> 
+	
+	
+	<LinearLayout
+        android:id="@+id/control_btn_layout_3"
+        android:background="@drawable/bottom_bg"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	    	
+	    <LinearLayout
+	        android:layout_weight="1"
+			android:layout_width="0dp"
+			android:gravity="center"
+	    	android:layout_height="wrap_content">	
+		    <ImageView 
+		        android:background="@drawable/btn_fengsu_wu"
+		        android:id="@+id/img_btn_fengsan"
+		        android:contentDescription="@string/app_name"
+				android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"/>
+    	</LinearLayout> 
+    	
+	    <LinearLayout
+	        android:layout_weight="1"
+			android:layout_width="0dp"
+			android:gravity="center"
+	    	android:layout_height="wrap_content">	
+		    <ImageView 
+		        android:background="@drawable/btn_dingshi_wu"
+		        android:id="@+id/img_btn_dingshi"
+		        android:contentDescription="@string/app_name"
+				android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"/>
+		</LinearLayout> 
+		
+	</LinearLayout> 
+	
+	
+</RelativeLayout>
